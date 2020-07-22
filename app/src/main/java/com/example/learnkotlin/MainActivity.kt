@@ -1,7 +1,12 @@
 package com.example.learnkotlin
 
+import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
+import android.widget.ExpandableListView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +23,18 @@ class MainActivity : AppCompatActivity() {
 
         listViewAdapter = ExpandableListViewAdapter(this,topicList,subTopicList)
         eListView.setAdapter(listViewAdapter)
+
+        eListView.setOnChildClickListener { parent:ExpandableListView, v: View, groupPosition:Int , childPosition:Int, id:Long ->
+            val selected: String = listViewAdapter.getChild(groupPosition, childPosition).toString()
+            when(selected){
+                "Kotlin Hello World"->{
+                    val browserIntent = Intent(Intent.ACTION_VIEW,
+                        Uri.parse("https://www.youtube.com/watch?v=1676actiiME&list=PLrnPJCHvNZuAIbejjZA1kGfLeA8ZpICB2&index=5&t=0s"))
+                    startActivity(browserIntent)
+                }
+            }
+            return@setOnChildClickListener true
+        }
 
     }
 
