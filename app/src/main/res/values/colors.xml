@@ -9,4 +9,9 @@
     <color name="colorGary">#808080</color>
     <color name="colorBlue">#00bff3</color>
     <color name="colorDarkBlue">#3700B3</color>
+    <color name="colorPurple">#800080</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorGreen">#00ff00</color>
+    <color name="colorPink">#FF69B4</color>
+    <color name="colorOrange">#FFA500</color>
 </resources>

@@ -7,11 +7,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="8dp"
-    android:background="@color/colorWhite"
+    android:background="@color/colorPurple"
     tools:context=".MainActivity">
 
-    <ExpandableListView
+    <!--<ExpandableListView
         android:id="@+id/eListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+    <com.diegodobelo.expandingview.ExpandingList
+        android:id="@+id/mainList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
