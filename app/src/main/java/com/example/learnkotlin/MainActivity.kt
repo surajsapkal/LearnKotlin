@@ -26,52 +26,59 @@ class MainActivity : AppCompatActivity() {
         topicThree()
         topicFour()
 
-        subTopicTitle.setOnClickListener {
-            when(subTopicTitle.text){
-                "Kotlin Hello World"->{
-                    val intent = Intent(Intent.ACTION_VIEW,
-                        Uri.parse("https://www.youtube.com/watch?v=1676actiiME&list=PLrnPJCHvNZuAIbejjZA1kGfLeA8ZpICB2&index=5&t=5s"))
-                    startActivity(intent)
-                }
-            }
-        }
-
-
     }
 
     private fun topicOne(){
         val topic1:ExpandingItem = mainList.createNewItem(R.layout.expanding_topic_1)
         topic1.findViewById<TextView>(R.id.topicTitle).text = "Kotlin Introduction"
-        topic1.setIndicatorColorRes(R.color.colorOrange)
+        topic1.setIndicatorColorRes(R.color.colorRoyalBlue)
         topic1.setIndicatorIconRes(R.drawable.ic_add)
-        topic1.createSubItems(7)
+        topic1.createSubItems(8)
 
         val t1subtopic0: View = topic1.getSubItemView(0)
-        t1subtopic0.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Hello World"
-
+        t1subtopic0.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin SetUp"
+        t1subtopic0.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=fwZyfudxnNo&feature=youtu.be"))
+            startActivity(intent)
+        }
+        
         val t1subtopic1: View = topic1.getSubItemView(1)
-        t1subtopic1.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Data Types"
+        t1subtopic1.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Hello World"
+        t1subtopic1.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=1676actiiME&list=PLrnPJCHvNZuAIbejjZA1kGfLeA8ZpICB2&index=5&t=5s"))
+            startActivity(intent)
+        }
 
         val t1subtopic2: View = topic1.getSubItemView(2)
-        t1subtopic2.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Operators"
+        t1subtopic2.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Data Types"
+        t1subtopic2.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=W3CuQ1dvP7A"))
+            startActivity(intent)
+        }
 
         val t1subtopic3: View = topic1.getSubItemView(3)
-        t1subtopic3.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Type Conversion"
+        t1subtopic3.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Operators"
 
         val t1subtopic4: View = topic1.getSubItemView(4)
-        t1subtopic4.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Expression & Statement"
+        t1subtopic4.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Type Conversion"
 
         val t1subtopic5: View = topic1.getSubItemView(5)
-        t1subtopic5.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Comments"
+        t1subtopic5.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Expression & Statement"
 
         val t1subtopic6: View = topic1.getSubItemView(6)
-        t1subtopic6.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Input/Otuput"
+        t1subtopic6.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Comments"
+
+        val t1subtopic7: View = topic1.getSubItemView(7)
+        t1subtopic7.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Input/Otuput"
     }
 
     private fun topicTwo(){
         val topic2:ExpandingItem = mainList.createNewItem(R.layout.expanding_topic_2)
         topic2.findViewById<TextView>(R.id.topic2Title).text = "Kotlin Flow Control"
-        topic2.setIndicatorColorRes(R.color.colorRed)
+        topic2.setIndicatorColorRes(R.color.colorRoyalBlue)
         topic2.setIndicatorIconRes(R.drawable.ic_add)
         topic2.createSubItems(6)
 
@@ -97,7 +104,7 @@ class MainActivity : AppCompatActivity() {
     private fun topicThree(){
         val topic3:ExpandingItem = mainList.createNewItem(R.layout.expanding_topic_3)
         topic3.findViewById<TextView>(R.id.topic3Title).text = "Kotlin Functions"
-        topic3.setIndicatorColorRes(R.color.colorYellow)
+        topic3.setIndicatorColorRes(R.color.colorRoyalBlue)
         topic3.setIndicatorIconRes(R.drawable.ic_add)
         topic3.createSubItems(4)
 
@@ -117,7 +124,7 @@ class MainActivity : AppCompatActivity() {
     private fun topicFour(){
         val topic4:ExpandingItem = mainList.createNewItem(R.layout.expanding_topic_4)
         topic4.findViewById<TextView>(R.id.topic4Title).text = "Kotlin OOP"
-        topic4.setIndicatorColorRes(R.color.colorGreen)
+        topic4.setIndicatorColorRes(R.color.colorRoyalBlue)
         topic4.setIndicatorIconRes(R.drawable.ic_add)
         topic4.createSubItems(14)
 
