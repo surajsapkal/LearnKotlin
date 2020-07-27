@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val mainList = findViewById<ExpandingList>(R.id.mainList)
+        Toast.makeText(this,"Welcome",Toast.LENGTH_SHORT).show()
+
         topicOne()
         topicTwo()
         topicThree()
