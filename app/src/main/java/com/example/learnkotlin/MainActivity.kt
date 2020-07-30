@@ -110,21 +110,51 @@ class MainActivity : AppCompatActivity() {
 
         val t2subtopic0 = topic2.getSubItemView(0)
         t2subtopic0.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin if expression"
+        t2subtopic0.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=CkvYXSpXS2s&feature=youtu.be"))
+            startActivity(intent)
+        }
 
         val t2subtopic1 = topic2.getSubItemView(1)
         t2subtopic1.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin when Expression"
+        t2subtopic1.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=2V6et2FdS8I&feature=youtu.be"))
+            startActivity(intent)
+        }
 
         val t2subtopic2 = topic2.getSubItemView(2)
         t2subtopic2.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin while Loop"
+        t2subtopic2.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=xmYXGZPouek&feature=youtu.be"))
+            startActivity(intent)
+        }
 
         val t2subtopic3 = topic2.getSubItemView(3)
         t2subtopic3.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin for Loop"
+        t2subtopic3.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=N0p2XUqmU1k&feature=youtu.be"))
+            startActivity(intent)
+        }
 
         val t2subtopic4 = topic2.getSubItemView(4)
         t2subtopic4.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin break"
+        t2subtopic4.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=orllPRNHb18&feature=youtu.be"))
+            startActivity(intent)
+        }
 
         val t2subtopic5 = topic2.getSubItemView(5)
         t2subtopic5.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin continue"
+        t2subtopic5.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=txNH4PmHbAo&feature=youtu.be"))
+            startActivity(intent)
+        }
 
     }
 
@@ -133,19 +163,47 @@ class MainActivity : AppCompatActivity() {
         topic3.findViewById<TextView>(R.id.topic3Title).text = "Kotlin Functions"
         topic3.setIndicatorColorRes(R.color.colorRoyalBlue)
         topic3.setIndicatorIconRes(R.drawable.ic_add)
-        topic3.createSubItems(4)
+        topic3.createSubItems(5)
 
         val t3subtopic0 = topic3.getSubItemView(0)
         t3subtopic0.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin function"
+        t3subtopic0.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+            startActivity(intent)
+        }
 
         val t3subtopic1 = topic3.getSubItemView(1)
         t3subtopic1.findViewById<TextView>(R.id.subTopicTitle).text = "Infix Function Call"
+        t3subtopic1.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=OrXua3aO_Ao&feature=youtu.be"))
+            startActivity(intent)
+        }
 
         val t3subtopic2 = topic3.getSubItemView(2)
         t3subtopic2.findViewById<TextView>(R.id.subTopicTitle).text = "Default & Named Arguments"
+        t3subtopic2.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=6frr8_Ii-So&feature=youtu.be"))
+            startActivity(intent)
+        }
 
         val t3subtopic3 = topic3.getSubItemView(3)
-        t3subtopic3.findViewById<TextView>(R.id.subTopicTitle).text = "Recursion & Tail Recursion"
+        t3subtopic3.findViewById<TextView>(R.id.subTopicTitle).text = "Recursion"
+        t3subtopic3.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=d39zxt6NWNk&feature=youtu.be"))
+            startActivity(intent)
+        }
+
+        val t3subtopic4 = topic3.getSubItemView(4)
+        t3subtopic4.findViewById<TextView>(R.id.subTopicTitle).text = "Tail Recursion"
+        t3subtopic4.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW,
+                Uri.parse("https://www.youtube.com/watch?v=pSCeJ3yhu2A&feature=youtu.be"))
+            startActivity(intent)
+        }
     }
 
     private fun topicFour(){
