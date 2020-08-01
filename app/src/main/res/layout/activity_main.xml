@@ -10,11 +10,6 @@
     android:background="@color/colorOffWhite"
     tools:context=".MainActivity">
 
-    <!--<ExpandableListView
-        android:id="@+id/eListView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>-->
-
     <com.diegodobelo.expandingview.ExpandingList
         android:id="@+id/mainList"
         android:layout_width="match_parent"

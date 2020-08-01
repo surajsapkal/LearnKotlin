@@ -247,75 +247,75 @@ class MainActivity : AppCompatActivity() {
 
         val t4subtopic04 = topic4.getSubItemView(4)
         t4subtopic04.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Visibilty Modifiers"
-        /*t4subtopic04.setOnClickListener {
+        t4subtopic04.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=0JT2M2jb7Lo&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
         val t4subtopic5 = topic4.getSubItemView(5)
-        t4subtopic5.findViewById<TextView>(R.id.subTopicTitle).text = "Infix Abstract Class"
-        /*t4subtopic5.setOnClickListener {
+        t4subtopic5.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Abstract Class"
+        t4subtopic5.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=nN5KhABIbHQ&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
         val t4subtopic6 = topic4.getSubItemView(6)
         t4subtopic6.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin interfaces"
-        /*t4subtopic6.setOnClickListener {
+        t4subtopic6.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=jea0OEGHi38&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
         val t4subtopic7 = topic4.getSubItemView(7)
         t4subtopic7.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Nested & Inner Classes"
-        /*t4subtopic7.setOnClickListener {
+        t4subtopic7.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=OZXZVk1-Q-8&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
         val t4subtopic8 = topic4.getSubItemView(8)
         t4subtopic8.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Data Class"
-        /*t4subtopic8.setOnClickListener {
+        t4subtopic8.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=Z6xj7hta7Ac&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
         val t4subtopic9 = topic4.getSubItemView(9)
         t4subtopic9.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Sealed Class"
-        /*t4subtopic9.setOnClickListener {
+        t4subtopic9.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=X8kLVFJDW7s&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
         val t4subtopic10 = topic4.getSubItemView(10)
         t4subtopic10.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Object"
-        /*t4subtopic10.setOnClickListener {
+        t4subtopic10.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=mK-0Zdjhcuk&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
         val t4subtopic11 = topic4.getSubItemView(11)
         t4subtopic11.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Companion Object"
-        /*t4subtopic11.setOnClickListener {
+        t4subtopic11.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=6Gtsp2M8rr8&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
         val t4subtopic12 = topic4.getSubItemView(12)
         t4subtopic12.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Extension Function"
-        /*t4subtopic12.setOnClickListener {
+        t4subtopic12.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW,
-                Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
+                Uri.parse("https://www.youtube.com/watch?v=6oFvZKF6KKg&feature=youtu.be"))
             startActivity(intent)
-        }*/
+        }
 
     }
 }
