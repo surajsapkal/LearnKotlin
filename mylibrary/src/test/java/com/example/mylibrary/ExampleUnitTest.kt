@@ -1,4 +1,4 @@
-package com.example.learnkotlinlibrary
+package com.example.mylibrary
 
 import org.junit.Test
 
