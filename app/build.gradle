@@ -36,4 +36,7 @@ dependencies {
     //new Expanding List
     implementation 'com.diegodobelo.expandingview:expanding-view:0.9.4'
 
+    //project library
+    implementation 'com.github.surajsapkal:LearnKotlin:1.0.2'
+
 }
