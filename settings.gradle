@@ -1,2 +1,3 @@
+include ':LearnKotlinLibrary'
 include ':app'
 rootProject.name = "Learn Kotlin"

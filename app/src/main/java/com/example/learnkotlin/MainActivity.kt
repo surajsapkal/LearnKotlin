@@ -7,12 +7,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.TextView
 import android.widget.Toast
-import com.diegodobelo.expandingview.ExpandingItem
-import com.diegodobelo.expandingview.ExpandingList
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.subtopic.*
-import kotlinx.android.synthetic.main.subtopic.view.*
-import kotlinx.android.synthetic.main.topic.view.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -38,7 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         val t1subtopic0 = topic1.getSubItemView(0)
         t1subtopic0.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin SetUp"
-        t1subtopic0.setOnClickListener {
+        t1subtopic0.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=fwZyfudxnNo&feature=youtu.be"))
             startActivity(intent)
@@ -46,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         
         val t1subtopic1 = topic1.getSubItemView(1)
         t1subtopic1.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Hello World"
-        t1subtopic1.setOnClickListener {
+        t1subtopic1.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=1676actiiME&list=PLrnPJCHvNZuAIbejjZA1kGfLeA8ZpICB2&index=5&t=5s"))
             startActivity(intent)
@@ -54,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         val t1subtopic2 = topic1.getSubItemView(2)
         t1subtopic2.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Data Types"
-        t1subtopic2.setOnClickListener {
+        t1subtopic2.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=b_qtmAL9540&feature=youtu.be"))
             startActivity(intent)
@@ -62,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
         val t1subtopic3 = topic1.getSubItemView(3)
         t1subtopic3.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Operators"
-        t1subtopic3.setOnClickListener {
+        t1subtopic3.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=m0Bz58QShs0&feature=youtu.be"))
             startActivity(intent)
@@ -70,7 +66,7 @@ class MainActivity : AppCompatActivity() {
 
         val t1subtopic4 = topic1.getSubItemView(4)
         t1subtopic4.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Type Conversion"
-        t1subtopic4.setOnClickListener {
+        t1subtopic4.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=I0YfMv_ma3Y&feature=youtu.be"))
             startActivity(intent)
@@ -78,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
         val t1subtopic5 = topic1.getSubItemView(5)
         t1subtopic5.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Expression & Statement"
-        t1subtopic5.setOnClickListener {
+        t1subtopic5.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=vCHIXI6zqYc&feature=youtu.be"))
             startActivity(intent)
@@ -86,15 +82,15 @@ class MainActivity : AppCompatActivity() {
 
         val t1subtopic6 = topic1.getSubItemView(6)
         t1subtopic6.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Comments"
-        t1subtopic6.setOnClickListener {
+        t1subtopic6.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=4CjchnS02ys&feature=youtu.be"))
             startActivity(intent)
         }
 
         val t1subtopic7 = topic1.getSubItemView(7)
-        t1subtopic7.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Input/Otuput"
-        t1subtopic7.setOnClickListener {
+        t1subtopic7.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Input/Output"
+        t1subtopic7.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=jNPEA88bSFU&feature=youtu.be"))
             startActivity(intent)
@@ -110,7 +106,7 @@ class MainActivity : AppCompatActivity() {
 
         val t2subtopic0 = topic2.getSubItemView(0)
         t2subtopic0.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin if expression"
-        t2subtopic0.setOnClickListener {
+        t2subtopic0.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=CkvYXSpXS2s&feature=youtu.be"))
             startActivity(intent)
@@ -118,7 +114,7 @@ class MainActivity : AppCompatActivity() {
 
         val t2subtopic1 = topic2.getSubItemView(1)
         t2subtopic1.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin when Expression"
-        t2subtopic1.setOnClickListener {
+        t2subtopic1.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=2V6et2FdS8I&feature=youtu.be"))
             startActivity(intent)
@@ -126,7 +122,7 @@ class MainActivity : AppCompatActivity() {
 
         val t2subtopic2 = topic2.getSubItemView(2)
         t2subtopic2.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin while Loop"
-        t2subtopic2.setOnClickListener {
+        t2subtopic2.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=FSHjROeqT38&feature=youtu.be"))
             startActivity(intent)
@@ -134,7 +130,7 @@ class MainActivity : AppCompatActivity() {
 
         val t2subtopic3 = topic2.getSubItemView(3)
         t2subtopic3.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin for Loop"
-        t2subtopic3.setOnClickListener {
+        t2subtopic3.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=N0p2XUqmU1k&feature=youtu.be"))
             startActivity(intent)
@@ -142,7 +138,7 @@ class MainActivity : AppCompatActivity() {
 
         val t2subtopic4 = topic2.getSubItemView(4)
         t2subtopic4.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin break"
-        t2subtopic4.setOnClickListener {
+        t2subtopic4.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=orllPRNHb18&feature=youtu.be"))
             startActivity(intent)
@@ -150,7 +146,7 @@ class MainActivity : AppCompatActivity() {
 
         val t2subtopic5 = topic2.getSubItemView(5)
         t2subtopic5.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin continue"
-        t2subtopic5.setOnClickListener {
+        t2subtopic5.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=txNH4PmHbAo&feature=youtu.be"))
             startActivity(intent)
@@ -167,7 +163,7 @@ class MainActivity : AppCompatActivity() {
 
         val t3subtopic0 = topic3.getSubItemView(0)
         t3subtopic0.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin function"
-        t3subtopic0.setOnClickListener {
+        t3subtopic0.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=YxixgkS_B1s&feature=youtu.be"))
             startActivity(intent)
@@ -175,7 +171,7 @@ class MainActivity : AppCompatActivity() {
 
         val t3subtopic1 = topic3.getSubItemView(1)
         t3subtopic1.findViewById<TextView>(R.id.subTopicTitle).text = "Infix Function Call"
-        t3subtopic1.setOnClickListener {
+        t3subtopic1.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=OrXua3aO_Ao&feature=youtu.be"))
             startActivity(intent)
@@ -183,7 +179,7 @@ class MainActivity : AppCompatActivity() {
 
         val t3subtopic2 = topic3.getSubItemView(2)
         t3subtopic2.findViewById<TextView>(R.id.subTopicTitle).text = "Default & Named Arguments"
-        t3subtopic2.setOnClickListener {
+        t3subtopic2.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=6frr8_Ii-So&feature=youtu.be"))
             startActivity(intent)
@@ -191,7 +187,7 @@ class MainActivity : AppCompatActivity() {
 
         val t3subtopic3 = topic3.getSubItemView(3)
         t3subtopic3.findViewById<TextView>(R.id.subTopicTitle).text = "Recursion"
-        t3subtopic3.setOnClickListener {
+        t3subtopic3.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=d39zxt6NWNk&feature=youtu.be"))
             startActivity(intent)
@@ -199,7 +195,7 @@ class MainActivity : AppCompatActivity() {
 
         val t3subtopic4 = topic3.getSubItemView(4)
         t3subtopic4.findViewById<TextView>(R.id.subTopicTitle).text = "Tail Recursion"
-        t3subtopic4.setOnClickListener {
+        t3subtopic4.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=pSCeJ3yhu2A&feature=youtu.be"))
             startActivity(intent)
@@ -215,7 +211,7 @@ class MainActivity : AppCompatActivity() {
 
         val t4subtopic0 = topic4.getSubItemView(0)
         t4subtopic0.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Class & Object"
-        t4subtopic0.setOnClickListener {
+        t4subtopic0.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=NpveMP5869U&feature=youtu.be"))
             startActivity(intent)
@@ -223,7 +219,7 @@ class MainActivity : AppCompatActivity() {
 
         val t4subtopic1 = topic4.getSubItemView(1)
         t4subtopic1.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Constructors"
-        t4subtopic1.setOnClickListener {
+        t4subtopic1.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=-1Rfj9is0vg&feature=yout"))
             startActivity(intent)
@@ -231,7 +227,7 @@ class MainActivity : AppCompatActivity() {
 
         val t4subtopic2 = topic4.getSubItemView(2)
         t4subtopic2.findViewById<TextView>(R.id.subTopicTitle).text = "Kotlin Getters & Setters"
-        t4subtopic2.setOnClickListener {
+        t4subtopic2.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW,
                 Uri.parse("https://www.youtube.com/watch?v=LFLkpeTgueY&feature=youtu.be"))
             startActivity(intent)
@@ -316,7 +312,8 @@ class MainActivity : AppCompatActivity() {
                 Uri.parse("https://www.youtube.com/watch?v=6oFvZKF6KKg&feature=youtu.be"))
             startActivity(intent)
         }
-        
+
 
     }
+
 }
